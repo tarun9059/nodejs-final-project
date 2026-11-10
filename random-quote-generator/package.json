@@ -1,0 +1,20 @@
+{
+  "name": "random-quote-generator",
+  "version": "1.0.0",
+  "description": "A responsive random inspirational quote generator built with Node.js and Express.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "quotes",
+    "express",
+    "nodejs",
+    "mini-project"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f2eee7">
+  <meta name="description" content="A little perspective for whatever today brings. Find a fresh inspirational quote.">
+  <title>Random Quote Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="topbar">
+      <a class="wordmark" href="/" aria-label="Random Quote Generator home">
+        <span class="wordmark-mark" aria-hidden="true">q</span>
+        <span>daily / perspective</span>
+      </a>
+      <span class="edition">A SMALL MOMENT FOR YOU</span>
+    </header>
+
+    <section class="quote-stage" aria-labelledby="page-title">
+      <div class="intro">
+        <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> PAUSE. REFLECT. BEGIN AGAIN.</p>
+        <h1 id="page-title">Random Quote<br><span>Generator</span></h1>
+        <p class="intro-copy">A little perspective for whatever today brings.</p>
+      </div>
+
+      <article class="quote-card" aria-label="Inspirational quote">
+        <div class="card-topline">
+          <span class="quote-label"><span class="spark" aria-hidden="true">✳</span> A THOUGHT TO CARRY</span>
+          <span class="quote-count" id="quote-count" aria-label="Quote number">01 <span>/ 36</span></span>
+        </div>
+        <div class="quote-content" id="quote-content" aria-live="polite" aria-atomic="true">
+          <span class="quote-mark" aria-hidden="true">“</span>
+          <blockquote id="quote-text">Finding a little inspiration...</blockquote>
+          <p class="quote-author" id="quote-author">—</p>
+        </div>
+        <div class="card-divider"></div>
+        <div class="card-actions">
+          <button class="button button-primary" id="new-quote" type="button">
+            <span>New Quote</span>
+            <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M4 10h11m-4-4 4 4-4 4" /></svg>
+          </button>
+          <div class="utility-actions">
+            <button class="button button-icon" id="copy-quote" type="button" aria-label="Copy quote" title="Copy quote">
+              <svg aria-hidden="true" viewBox="0 0 20 20"><rect x="7" y="7" width="9" height="10" rx="1.5"/><path d="M13 7V5.5A1.5 1.5 0 0 0 11.5 4h-6A1.5 1.5 0 0 0 4 5.5v7A1.5 1.5 0 0 0 5.5 14H7"/></svg>
+              <span class="button-label">Copy</span>
+            </button>
+            <button class="button button-icon" id="share-quote" type="button" aria-label="Share quote" title="Share quote">
+              <svg aria-hidden="true" viewBox="0 0 20 20"><circle cx="15" cy="4.5" r="2"/><circle cx="5" cy="10" r="2"/><circle cx="15" cy="15.5" r="2"/><path d="m6.8 9 6.4-3.5M6.8 11l6.4 3.5"/></svg>
+              <span class="button-label">Share</span>
+            </button>
+          </div>
+        </div>
+      </article>
+      <p class="stage-note"><span class="note-dot" aria-hidden="true"></span> Take what you need. Leave the rest.</p>
+    </section>
+
+    <footer class="footer">
+      <span>MADE FOR THE IN-BETWEEN MOMENTS</span>
+      <span class="footer-year">INSPIRATION, ON DEMAND <span aria-hidden="true">✳</span></span>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </main>
+</body>
+</html>
